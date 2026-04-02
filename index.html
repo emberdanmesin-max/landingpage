@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk - Ember & Mesin</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #fa5252;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        header { background: var(--dark); color: white; padding: 3rem 1rem; text-align: center; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            display: flex; 
+            flex-direction: column;
+        }
+
+        .card-content { padding: 1.5rem; flex-grow: 1; }
+        .card h2 { color: var(--primary); margin-bottom: 0.5rem; font-size: 1.4rem; }
+        .card p { font-size: 0.9rem; color: #555; margin-bottom: 1rem; }
+
+        .preview-img { 
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover; 
+            border-top: 1px solid #eee;
+            background: #eee; /* Fallback warna jika gambar belum ada */
+        }
+
+        .btn { 
+            display: block; 
+            background: var(--primary); 
+            color: white; 
+            text-align: center; 
+            text-decoration: none; 
+            padding: 0.8rem; 
+            font-weight: bold;
+            margin: 1rem 1.5rem 1.5rem;
+            border-radius: 6px;
+        }
+
+        .saweria-section { text-align: center; margin: 4rem 0; padding: 2rem; background: #fff3f3; border-radius: 12px; }
+        .btn-saweria { background: var(--accent); padding: 1rem 2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ember & Mesin</h1>
+    <p>Katalog Alat Digital & Linguistik</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <!-- KANAAN -->
+        <div class="card">
+            <div class="card-content">
+                <h2>🇮🇩 Kanaan</h2>
+                <p>Bahasa pemrograman berbasis Bahasa Indonesia untuk memudahkan logika coding.</p>
+            </div>
+            <!-- Ganti 'kanaan-preview.jpg' dengan file gambar Anda -->
+            <img src="kanaan-preview.jpg" alt="Preview Kanaan" class="preview-img">
+            <a href="https://kanaan.emberdanmesin.online" target="_blank" class="btn">Buka Kanaan</a>
+        </div>
+
+        <!-- EFATA -->
+        <div class="card">
+            <div class="card-content">
+                <h2>✍️ Efata</h2>
+                <p>Alat transcribe manual dan bantu tulis karakter Ibrani dengan presisi tinggi.</p>
+            </div>
+            <img src="efata-preview.jpg" alt="Preview Efata" class="preview-img">
+            <a href="https://efata.emberdanmesin.online" target="_blank" class="btn">Buka Efata</a>
+        </div>
+
+        <!-- HABAKUK -->
+        <div class="card">
+            <div class="card-content">
+                <h2>⏳ Habakuk</h2>
+                <p>Sistem simulasi kronologis untuk memetakan alur waktu secara sistematis.</p>
+            </div>
+            <img src="habakuk-preview.jpg" alt="Preview Habakuk" class="preview-img">
+            <a href="https://habakuk.emberdanmesin.online" target="_blank" class="btn">Buka Habakuk</a>
+        </div>
+
+        <!-- GIDEON -->
+        <div class="card">
+            <div class="card-content">
+                <h2>🔍 Gideon</h2>
+                <p>Alat koreksi teks lanjut untuk menyempurnakan struktur dan kualitas tulisan.</p>
+            </div>
+            <img src="gideon-preview.jpg" alt="Preview Gideon" class="preview-img">
+            <a href="https://gideon.emberdanmesin.online" target="_blank" class="btn">Buka Gideon</a>
+        </div>
+    </div>
+
+    <!-- SAWERIA -->
+    <div class="saweria-section">
+        <h3>Dukung Pengembangan Alat Kami</h3>
+        <p style="margin-bottom: 1.5rem;">Bantu kami agar tetap bisa menghadirkan inovasi gratis bagi Indonesia.</p>
+        <a href="https://saweria.co/emberdanmesin" target="_blank" class="btn btn-saweria">☕ Traktir di Saweria</a>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 2rem; opacity: 0.6; font-size: 0.8rem;">
+    &copy; 2024 Ember & Mesin
+</footer>
+
+</body>
+</html>
